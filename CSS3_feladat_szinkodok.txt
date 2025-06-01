@@ -1,0 +1,4 @@
+<div class="rectangle rectangle-a">A - #3498DB</div>
+<div class="rectangle rectangle-b">B - #F1C40F</div>
+<div class="rectangle rectangle-c">C - #2ECC71</div>
+<div class="rectangle rectangle-d">D - #e74c3c</div>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Színes blokkok (Flexbox)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #ecf0f1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 90vw;
+      max-width: 800px;
+      height: 90vh;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .a {
+      flex: 2;
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border-radius: 8px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+
+    .b {
+      flex: 3;
+      background-color: #f1c40f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .c {
+      flex: 2;
+      background-color: #2ecc71;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border-radius: 8px;
+      writing-mode: vertical-rl;
+    }
+
+    .d {
+      flex: 3;
+      background-color: #e74c3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border-radius: 8px;
+      transform: rotate(180deg);
+    }
+
+    .empty {
+      flex: 1;
+    }
+
+    /* Mobilnézet */
+    @media (max-width: 600px) {
+      .container {
+        height: auto;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .a, .c, .d {
+        writing-mode: horizontal-tb;
+        transform: none;
+      }
+      .empty {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Első sor -->
+    <div class="row">
+      <div class="a">A - #3498db</div>
+      <div class="b">B - #f1c40f</div>
+    </div>
+
+    <!-- Második sor -->
+    <div class="row">
+      <div class="a"></div> <!-- Üres terület az "A" folytatásához -->
+      <div class="empty"></div> <!-- Üres cella -->
+      <div class="c">C - #2ecc71</div>
+    </div>
+
+    <!-- Harmadik sor -->
+    <div class="row">
+      <div class="d">D - #e74c3c</div>
+      <div class="c"></div> <!-- "C" folytatása -->
+    </div>
+  </div>
+</body>
+</html>
