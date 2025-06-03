@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyszerű REST API</title>
+    <link rel="stylesheet" href="client.css">
+    <script src="client.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Axios Teszt Oldal</h1>
+        <p>Ez egy egyszerű példa a REST API használatára.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="client.html">Kliens</a></li>
+                <li><a href="server.html">Szerver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="preloading">
+            <p>Adatok betöltése...</p>
+            <img src="./images/Walk.gif" alt="Betöltés folyamatban...">
+        </div>
+        <div id="container" style="display: none;">
+            <h2>Színek kiválasztása</h2>
+            <form id="dataForm">
+                <label for="color-selector">Választható színek:</label>
+                <select name="color-selector" id="color-selector"></select>
+                <button type="submit">Beállítás háttérnek</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </main>
+</body>
+
+</html>

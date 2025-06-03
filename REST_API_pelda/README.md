@@ -1,0 +1,1 @@
+# Szerver kliens minta alkalmazás
