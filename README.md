@@ -83,15 +83,19 @@ A hosting szolgáltatók szervereket bérbe adnak, ahol weboldalak és alkalmaz�
 
 ## 🎨 CSS - a megjelenés kialakítása
 ### Alap szintaxis
+Általánosan:
+```css
+szelektor {
+    tulajdonság1: érték1;
+    tulajdonság2: érték2;
+}
+```
+
+Konkrét példa:
 ```css
 body {
     background-color: rgb(235, 235, 104);
     font-family: Arial, sans-serif;
-}
-
-szelektor {
-    tulajdonság1: érték1;
-    tulajdonság2: érték2;
 }
 ```
 
