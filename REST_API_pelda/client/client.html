@@ -14,14 +14,15 @@
     <header>
         <h1>Axios Teszt Oldal</h1>
         <p>Ez egy egyszerű példa a REST API használatára.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="client.html">Kliens</a></li>
-                <li><a href="server.html">Szerver</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="client.html">Kliens</a></li>
+            <li><a href="server.html">Szerver</a></li>
+        </ul>
+    </nav>
+
     <main>
         <div id="preloading">
             <p>Adatok betöltése...</p>
@@ -32,7 +33,7 @@
             <form id="dataForm">
                 <label for="color-selector">Választható színek:</label>
                 <select name="color-selector" id="color-selector"></select>
-                <button type="submit">Beállítás háttérnek</button>
+                <button type="button" id="backgroundButton">Beállítás háttérnek</button>
             </form>
             <div id="message"></div>
         </div>
