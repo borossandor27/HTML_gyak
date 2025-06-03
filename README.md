@@ -83,6 +83,7 @@ A hosting szolgáltatók szervereket bérbe adnak, ahol weboldalak és alkalmaz�
 
 ## 🎨 CSS - a megjelenés kialakítása
 ### Alap szintaxis
+
 Általánosan:
 ```css
 szelektor {
@@ -104,7 +105,9 @@ body {
 - Betűk
 - Box model (margók, padding, border)
 - Osztályok és azonosítók
-- Elhelyezés: Flexbox és Grid
+- Pszeudo osztály szelektor
+- Pszeudo elem szelektor
+- Elemek elhelyezése, egymáshoz viszonyított helyzetük meghatározása: Flexbox és Grid
 - Reszponzív design (Media query-k)
 
 ## ⚙️ JavaScript - interaktivitás hozzáadása
