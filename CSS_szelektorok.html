@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Szelektorok Bemutató</title>
+  <link rel="stylesheet" href="./CSS_szelektorok.css">
+</head>
+<body>
+
+  <h1>CSS Szelektorok Bemutató</h1>
+
+  <p>Ez egy egyszerű bekezdés (tag szelektor).</p>
+
+  <p class="kiemelt">Ez egy kiemelt bekezdés (osztály szelektor).</p>
+
+  <p id="fontos">Ez egy fontos bekezdés (ID szelektor).</p>
+
+  <div>
+    <span>Ez egy span egy div-en belül (leszármazott szelektor).</span>
+  </div>
+
+  <section>
+    <p>Ez egy közvetlen gyermek bekezdés (utód szelektor).</p>
+    <div>
+      <p>Ez NEM közvetlen gyermek (nem stílusozódik).</p>
+    </div>
+  </section>
+
+  <a href="https://example.com" target="_blank">Ez egy link, ami új lapon nyílik (attribútum szelektor).</a>
+
+</body>
+</html>
