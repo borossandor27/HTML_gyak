@@ -1,40 +1,40 @@
-    /* Jelölő (tag) szelektor */
-    p {
-        color: blue;
-    }
+/* Jelölő (tag) szelektor */
+p {
+    color: blue;
+}
 
-    /* Osztály szelektor */
-    .kiemelt {
-        font-weight: bold;
-    }
+/* Osztály szelektor */
+.kiemelt {
+    font-weight: bold;
+}
 
-    /* Azonosító (ID) szelektor */
-    #fontos {
-        background-color: yellow;
-    }
+/* Azonosító (ID) szelektor */
+#fontos {
+    background-color: yellow;
+}
 
-    /* Leszármazott szelektor (pl. div-en belüli span) */
-    div span {
-        text-decoration: underline;
-    }
+/* Leszármazott szelektor (pl. div-en belüli span) */
+div span {
+    text-decoration: underline;
+}
 
-    /* Közvetlen utód szelektor (pl. div > p) */
-    section>p {
-        font-style: italic;
-    }
+/* Közvetlen utód szelektor (pl. div > p) */
+section>p {
+    font-style: italic;
+}
 
-    /* Attribútum szelektor */
-    a[target="_blank"] {
-        color: red;
-    }
+/* Attribútum szelektor */
+a[target="_blank"] {
+    color: red;
+}
 
-    /* Pszeudoosztály: első bekezdés */
-    p:first-child {
-        border-bottom: 1px solid gray;
-    }
+/* Pszeudoosztály: első bekezdés */
+p:first-child {
+    border-bottom: 1px solid gray;
+}
 
-    /* Pszeudoelem: első betű */
-    p::first-letter {
-        font-size: 150%;
-        color: green;
-    }
+/* Pszeudoelem: első betű */
+p::first-letter {
+    font-size: 150%;
+    color: green;
+}
