@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Szelektorok Bemutatása</title>
+</head>
+<body>
+    <h1 id="focim">CSS Szelektorok Bemutatása</h1>
+    
+    <h2>1. Jelölő (tag) szelektor</h2>
+    <p>Ez egy bekezdés, amelyre a 'p' jelölőszelektor hat.</p>
+    
+    <h2>2. Osztály szelektor</h2>
+    <p class="kiemelt">Ez a bekezdés a 'kiemelt' osztályt használja.</p>
+    <div class="kiemelt">Ez a div elem is a 'kiemelt' osztályt használja.</div>
+    
+    <h2>3. Azonosító szelektor</h2>
+    <div>Az oldal címe (h1 elem) az 'focim' azonosítót használja.</div>
+    
+    <h2>4. Leszármazott szelektor</h2>
+    <div>
+        Ez a div tartalmaz egy <span>spant</span>, amelyre a leszármazott szelektor hat.
+    </div>
+    
+    <h2>5. Utód (child) szelektor</h2>
+    <ul>
+        <li>Első listaelem (közvetlen utód)</li>
+        <li>Második listaelem
+            <ul>
+                <li>Belső lista (nem közvetlen utód)</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>6. Attribútum szelektor</h2>
+    <p>
+        <a href="#" target="_self">Belső link</a> | 
+        <a href="#" target="_blank">Külső link (új ablak)</a>
+    </p>
+    
+    <h2>7. Pszeudóosztály</h2>
+    <p>Hover (egérrel föléhúzás) effektus a linkeken: <a href="#">próbáld ki</a></p>
+    
+    <h2>8. Pszeudoelem</h2>
+    <p>Ez a bekezdés első betűje megváltozik a ::first-letter pszeudoelem miatt.</p>
+</body>
+</html>

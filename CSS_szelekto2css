@@ -1,0 +1,45 @@
+/* Jelölő (tag) szelektor */
+p {
+    color: blue;
+}
+
+/* Osztály szelektor */
+.kiemelt {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/* Azonosító szelektor */
+#focim {
+    font-size: 24px;
+    color: red;
+    text-decoration: underline;
+}
+
+/* Leszármazott szelektor */
+div span {
+    font-style: italic;
+    color: green;
+}
+
+/* Utód (child) szelektor */
+ul>li {
+    border-left: 2px solid purple;
+    padding-left: 10px;
+}
+
+/* Attribútum szelektor */
+a[target="_blank"] {
+    background-color: lightgray;
+}
+
+/* Pszeudóosztály */
+a:hover {
+    color: orange;
+}
+
+/* Pszeudoelem */
+p::first-letter {
+    font-size: 150%;
+    color: darkblue;
+}
